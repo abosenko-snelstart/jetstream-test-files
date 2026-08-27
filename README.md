@@ -1,4 +1,6 @@
 # jetstream-test-files
 The stream of ai-generated test files
 
-Example: https://abosenko-snelstart.github.io/jetstream-test-files/README.md
+https://abosenko-snelstart.github.io/jetstream-test-files/README.md
+
+https://abosenko-snelstart.github.io/jetstream-test-files/valid-peppol-invoice.xml
