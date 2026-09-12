@@ -6,7 +6,7 @@
     <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
     <cbc:ID>12115118</cbc:ID>
     <cbc:IssueDate>2026-09-12</cbc:IssueDate>
-    <cbc:DueDate>2026-09-12</cbc:DueDate>
+    <cbc:DueDate>2026-09-26</cbc:DueDate>
     <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
     <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
     <cbc:BuyerReference>47806</cbc:BuyerReference>
@@ -14,7 +14,7 @@
         <cac:Party>
             <cac:PostalAddress>
                 <cbc:StreetName>Simplerstraat 1</cbc:StreetName>
-                <cbc:CityName>InvoicingStad</cbc:CityName>
+                <cbc:CityName>Amsterdam</cbc:CityName>
                 <cbc:PostalZone>1111 ZZ</cbc:PostalZone>
                 <cac:Country>
                     <cbc:IdentificationCode>NL</cbc:IdentificationCode>
@@ -30,17 +30,18 @@
                 <cbc:RegistrationName>Test Sender</cbc:RegistrationName>
                 <cbc:CompanyID schemeID="0106">12345678</cbc:CompanyID>
             </cac:PartyLegalEntity>
+            <cac:Contact>
+                <cbc:Telephone>020-1234567</cbc:Telephone>
+                <cbc:ElectronicMail>info@testsender.nl</cbc:ElectronicMail>
+            </cac:Contact>
         </cac:Party>
     </cac:AccountingSupplierParty>
     <cac:AccountingCustomerParty>
         <cac:Party>
             <cbc:EndpointID schemeID="0106">99999999</cbc:EndpointID>
-            <cac:PartyIdentification>
-                <cbc:ID>10202</cbc:ID>
-            </cac:PartyIdentification>
             <cac:PostalAddress>
                 <cbc:StreetName>Teststraat 123</cbc:StreetName>
-                <cbc:CityName>Grotestad</cbc:CityName>
+                <cbc:CityName>Amsterdam</cbc:CityName>
                 <cbc:PostalZone>1111 AA</cbc:PostalZone>
                 <cac:Country>
                     <cbc:IdentificationCode>NL</cbc:IdentificationCode>
@@ -54,28 +55,22 @@
     </cac:AccountingCustomerParty>
     <cac:Delivery>
         <cbc:ActualDeliveryDate>2026-09-12</cbc:ActualDeliveryDate>
-        <cac:DeliveryLocation>
-            <cbc:ID schemeID="GLN">1234567890128</cbc:ID>
-        </cac:DeliveryLocation>
     </cac:Delivery>
     <cac:PaymentMeans>
         <cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+        <cac:PaymentChannelCode>SEPA</cac:PaymentChannelCode>
+        <cac:PayeeFinancialAccount>
+            <cbc:ID>NL91ABNA0417164300</cbc:ID>
+            <cac:FinancialInstitutionBranch>
+                <cac:FinancialInstitution>
+                    <cbc:ID>ABNANL2A</cbc:ID>
+                </cac:FinancialInstitution>
+            </cac:FinancialInstitutionBranch>
+        </cac:PayeeFinancialAccount>
     </cac:PaymentMeans>
     <cac:PaymentTerms>
-        <cbc:Note>30 days net</cbc:Note>
+        <cbc:Note>Net 14 days</cbc:Note>
     </cac:PaymentTerms>
-    <cac:AllowanceCharge>
-        <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-        <cbc:AllowanceChargeReasonCode>95</cbc:AllowanceChargeReasonCode>
-        <cbc:Amount currencyID="EUR">0.00</cbc:Amount>
-        <cac:TaxCategory>
-            <cbc:ID>S</cbc:ID>
-            <cbc:Percent>21.00</cbc:Percent>
-            <cac:TaxScheme>
-                <cbc:ID>VAT</cbc:ID>
-            </cac:TaxScheme>
-        </cac:TaxCategory>
-    </cac:AllowanceCharge>
     <cac:TaxTotal>
         <cbc:TaxAmount currencyID="EUR">21.00</cbc:TaxAmount>
         <cac:TaxSubtotal>
